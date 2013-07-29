@@ -14,17 +14,17 @@ Original class can be found at: http://blog.kevburnsjr.com/php-unique-hash
 Installation
 --------------
 Clone or download the repo and extract extensions/yii-short-hash to
-	protected/extensions/
+	`protected/extensions/`
 
 Add the extension to your configuration:
-	'components' => array(
+	`'components' => array(
 		*...*
 		'shortHash' => array(
 			'class' => 'ext.yii-short-hash.ShortHash',
 			'length' => 5,
 		),
 		*...*
-	)
+	)`
 
 **Note:** If 'length' param is passed, it will be used as the default length for hashes. Defaults to 5.
 
@@ -33,12 +33,12 @@ Add the extension to your configuration:
 Usage
 --------------
 To hash an integer:
-	Yii::app()->shortHash->hash($number);
+	`Yii::app()->shortHash->hash($number);`
 Optionally you may pass in custom length:
-	Yii::app()->shortHash->hash($number, $length);
+	`Yii::app()->shortHash->hash($number, $length);`
 
 To unhash an integer:
-	Yii::app()->shortHash->unhash($hash);
+	`Yii::app()->shortHash->unhash($hash);`
 
 Info
 --------------
